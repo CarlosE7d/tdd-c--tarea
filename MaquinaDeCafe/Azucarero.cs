@@ -14,6 +14,16 @@ namespace MaquinaDeCafe
             this.cantidadDeAzucar = azucar;
         }
 
+        public int getCantidadDeAzucar()
+        {
+            return this.cantidadDeAzucar;
+        }
+
+        public void giveAzucar(int v)
+        {
+            this.cantidadDeAzucar -= v;
+        }
+
         public bool hasAzucar(int v)
         {
             if (cantidadDeAzucar >= v)
