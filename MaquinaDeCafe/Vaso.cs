@@ -11,7 +11,7 @@ namespace MaquinaDeCafe
         public int cantidadVaso;
         public int contenido;
 
-        public Vaso(int cantidadVasos, int contenido)
+        public Vaso(int cantidadVasos, int contenido)// Constructor
         {
             this.cantidadVaso = cantidadVasos;
             this.contenido = contenido;
@@ -24,7 +24,7 @@ namespace MaquinaDeCafe
 
         public bool hasVasos(int v)
         {
-            if (cantidadVaso == v)
+            if (cantidadVaso >= v)
             {
                 return true;
             }
