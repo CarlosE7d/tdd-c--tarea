@@ -76,7 +76,7 @@ namespace MaquinaDeCafe
             vaso.setCantidadVasos(vaso.getCantidadVasos() - cantVasos);
             this.azucar.setCantidadDeAzucar(this.getAzucar().getCantidadDeAzucar() - cantAzucar);
 
-            return "Felicitaciones";
+            return "Disfrute su café";
         }
 
 

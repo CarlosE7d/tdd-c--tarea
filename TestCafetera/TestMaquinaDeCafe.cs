@@ -225,7 +225,7 @@ namespace TestCafetera
             Assert.That(resultado, Is.EqualTo(17));
         }
         [Test]
-        public void deberiaDevolverFelicitaciones()
+        public void deberiaDevolverDisfruteSuCafe()
         {
             Cafetera cafetera = new Cafetera(50);
             Vaso vasoPequeno = new Vaso(5, 10);
@@ -247,7 +247,7 @@ namespace TestCafetera
 
             String resultado = maquinaDeCafe.getVasoDeCafe(vaso,1,3);
 
-            Assert.That(resultado, Is.EqualTo("Felicitaciones"));
+            Assert.That(resultado, Is.EqualTo("Disfrute su café"));
         }
     }
 }
