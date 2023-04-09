@@ -30,6 +30,16 @@ namespace MaquinaDeCafe
             }
             return false;
         }
+
+        public void giveVasos(int v)
+        {
+            this.cantidadVaso -= v;
+        }
+
+        public int getCantidadVasos()
+        {
+            return this.cantidadVaso;
+        }
     }
 
 

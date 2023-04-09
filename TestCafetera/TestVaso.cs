@@ -17,5 +17,14 @@ namespace TestCafetera
 
             Assert.AreEqual(true, resultado);
         }
+
+        [Test]
+        public void deberiaRestarCantidadDeVaso()
+        {
+            Vaso vasosPequeños = new Vaso(5, 10);
+            vasosPequeños.giveVasos(1);
+
+            Assert.AreEqual(4, vasosPequeños.getCantidadVasos());
+        }
     }
 }
