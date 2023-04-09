@@ -84,5 +84,20 @@ namespace MaquinaDeCafe
         {
             return this.azucar;
         }
+
+        public Cafetera getCafetera()
+        {
+            return this.cafetera;
+        }
+
+        public Vaso getVasosPequeno()
+        {
+            return vasoPequeno;
+        }
+
+        public Azucarero getAzucarero()
+        {
+            return this.azucar;
+        }
     }
 }
