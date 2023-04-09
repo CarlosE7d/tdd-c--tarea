@@ -40,6 +40,11 @@ namespace MaquinaDeCafe
         {
             return this.cantidadVaso;
         }
+
+        public int getContenido()
+        {
+            return this.contenido;
+        }
     }
 
 

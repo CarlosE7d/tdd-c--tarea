@@ -32,5 +32,10 @@ namespace MaquinaDeCafe
             }
             return false;
         }
+
+        public void setCantidadDeAzucar(int cantAzucar)
+        {
+            this.cantidadDeAzucar = cantAzucar;
+        }
     }
 }

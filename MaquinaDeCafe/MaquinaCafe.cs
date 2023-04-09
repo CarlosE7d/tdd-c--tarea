@@ -52,5 +52,37 @@ namespace MaquinaDeCafe
                 return this.vasoGrande;
             }
         }
+
+        public string getVasoDeCafe(Vaso vaso, int cantVasos, int cantAzucar)
+        {
+            if(vaso.cantidadVaso <= cantVasos)
+            {
+                return "No Hay Vasos";
+            }
+
+            int cantidadTotalCafe = vaso.getContenido() * cantVasos;
+
+            if(cantidadTotalCafe > this.cafetera.getCantidadCafe())
+            {
+                return "No Hay Cafe";
+            }
+
+            if(cantAzucar > this.azucar.getCantidadDeAzucar())
+            {
+                return "No Hay Azucar";
+            }
+
+            this.cafetera.setCantidadDeCafe(this.cafetera.getCantidadDeCafe() - cantidadTotalCafe);
+            vaso.setCantidadVasos(vaso.getCantidadVasos() - cantVasos);
+            this.azucar.setCantidadDeAzucar(this.getAzucar().getCantidadDeAzucar() - cantAzucar);
+
+            return "Felicitaciones";
+        }
+
+
+        public Azucarero getAzucar()
+        {
+            return this.azucar;
+        }
     }
 }
